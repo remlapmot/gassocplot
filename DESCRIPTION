@@ -22,8 +22,7 @@ Imports:
 Suggests:
     knitr
 License: GPL-3
-ByteCompile: TRUE
-LazyData: TRUE
+LazyData: true
 LazyDataCompression: xz
 Encoding: UTF-8
 RoxygenNote: 7.3.2
