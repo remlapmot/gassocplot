@@ -490,7 +490,7 @@ assoc_plot <- function(data, corr = NULL, corr.top = NULL, ylab = NULL, title = 
 
   # Dataset
   if (type == "log10p") {
-    mlog10p <- -(log(2) + pnorm(-abs(data$z), log.p = T)) / log(10)
+    mlog10p <- -(log(2) + stats::pnorm(-abs(data$z), log.p = T)) / log(10)
     mlog10p[mlog10p > 1000] <- 1000
     data$stats <- mlog10p
   } else {
@@ -868,7 +868,7 @@ stack_assoc_plot <- function(markers, z, corr = NULL, corr.top = NULL, traits, y
   # mlog10p
   if (type == "log10p") {
     mlog10p <- suppressWarnings(apply(z, 2, function(x) {
-      -(log(2) + pnorm(-abs(x), log.p = T)) / log(10)
+      -(log(2) + stats::pnorm(-abs(x), log.p = T)) / log(10)
     }))
     mlog10p[mlog10p > 1000 & !is.na(mlog10p)] <- 1000
   }
