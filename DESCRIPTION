@@ -24,5 +24,6 @@ Suggests:
 License: GPL-3
 ByteCompile: TRUE
 LazyData: TRUE
+LazyDataCompression: xz
 Encoding: UTF-8
 RoxygenNote: 7.3.2
