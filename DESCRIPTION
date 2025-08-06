@@ -2,16 +2,13 @@ Package: gassocplot
 Title: Regional association plots
 Version: 0.0.2
 Date: 01-04-2024
-Authors@R: c(
-    person(
-        given = "James",
-        family = "Staley",
-        email = "jrstaley95@gmail.com",
-        role = c("aut", "cre"),
-        comment = c(ORCID = "0009-0001-9520-5011")
-    )
-  )
-Description: This package is used plot regional association plots. 
+Authors@R: 
+    person("James", "Staley", , "jrstaley95@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-9520-5011"))
+Description: This package is used plot regional association plots.
+License: GPL-3
+URL: https://github.com/jrs95/gassocplot,
+    https://mrcieu.r-universe.dev/gassocplot
 Depends:
     R (>= 3.6.0)
 Imports:
@@ -21,10 +18,7 @@ Imports:
     gtable
 Suggests:
     knitr
-License: GPL-3
-URL: https://github.com/jrs95/gassocplot,
-    https://mrcieu.r-universe.dev/gassocplot
+Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-Encoding: UTF-8
 RoxygenNote: 7.3.2
